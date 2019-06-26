@@ -54,6 +54,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201906261449237_InitialCreate.cs" />
+    <Compile Include="Migrations\201906261449237_InitialCreate.Designer.cs">
+      <DependentUpon>201906261449237_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906262032397_Update-Database.cs" />
+    <Compile Include="Migrations\201906262032397_Update-Database.Designer.cs">
+      <DependentUpon>201906262032397_Update-Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,6 +70,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201906261449237_InitialCreate.resx">
+      <DependentUpon>201906261449237_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906262032397_Update-Database.resx">
+      <DependentUpon>201906262032397_Update-Database.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
