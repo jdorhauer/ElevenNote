@@ -35,6 +35,11 @@ namespace ElevenNote.Services
             }
         }
 
+        public object GetNoteById(int noteId)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<NoteListItem> GetNotes()
         {
             using (var ctx = new ApplicationDbContext())
