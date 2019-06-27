@@ -1,6 +1,12 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url(/Content/notepad.jpg);
+    background-size: cover;
+}
+
+.jumbotron{
+    background-color: rgba(246, 237, 237, 0.00);
 }
 
 /* Set padding to keep content from hitting the edges */
